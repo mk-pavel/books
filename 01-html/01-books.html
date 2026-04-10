@@ -4,6 +4,30 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>A Song of Ice and Fire Books and Covers</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    th,
+    td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    thead th,
+    tfoot td {
+      font-weight: 700;
+    }
+
+    thead th[colspan] {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <main>
@@ -78,13 +102,16 @@
       <table>
         <thead>
           <tr>
-            <th>POV Character</th>
+            <th rowspan="2">POV Character</th>
+            <th colspan="5">Books</th>
+            <th rowspan="2">Total Chapters</th>
+          </tr>
+          <tr>
             <th>A Game of Thrones</th>
             <th>A Clash of Kings</th>
             <th>A Storm of Swords</th>
             <th>A Feast for Crows</th>
             <th>A Dance with Dragons</th>
-            <th>Total Chapters</th>
           </tr>
         </thead>
 
@@ -93,9 +120,9 @@
             <td>Eddard Stark</td>
             <td>15</td>
             <td>n/a</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td>15</td>
           </tr>
 
@@ -122,8 +149,8 @@
           <tr>
             <td>Cersei Lannister</td>
             <td>n/a</td>
-            <td>-</td>
-            <td>-</td>
+            <td></td>
+            <td></td>
             <td>10</td>
             <td>n/a</td>
             <td>10</td>
@@ -139,6 +166,13 @@
             <td>42</td>
           </tr>
         </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="6">Total POV Chapters (Displayed)</td>
+            <td>147</td>
+          </tr>
+        </tfoot>
       </table>
     </section>
   </main>
